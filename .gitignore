@@ -7,12 +7,16 @@ wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
+!wp-content/themes/twentytwentyone/
 
 # ignore these plugins
 wp-content/plugins/hello.php
 
 # ignore specific themes
-wp-content/themes/twenty*/
+wp-content/themes/twentynineteen/
+wp-content/themes/twentytwinty/
+
+
 
 # ignore node dependency directories
 node_modules/
@@ -21,3 +25,39 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+
+###############_________________##################
+ogs/*
+config/*
+app/public/license.txt
+app/public/readme.html
+app/public/wp-activate.php
+app/public/wp-admin
+app/public/index.php
+app/public/wp-blog-header.php
+app/public/wp-comments-post.php
+app/public/wp-config-sample.php
+app/public/wp-config.php
+!app/public/wp-content/themes
+!app/public/wp-content/plugins
+app/public/wp-cron.php
+app/public/wp-includes
+app/public/wp-links-opml.php
+app/public/wp-load.php
+app/public/wp-login.php
+app/public/wp-mail.php
+app/public/wp-settings.php
+app/public/wp-signup.php
+app/public/wp-trackback.php
+app/public/xmlrpc.php
+app/public/.htaccess
+
+conf/mysql/my.cnf.hbs
+
+conf/nginx/includes/
+
+conf/nginx/
+
+conf/php/
+

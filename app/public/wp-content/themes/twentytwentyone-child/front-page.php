@@ -11,7 +11,7 @@
 
 get_header();
 $homepageProfiles = new WP_Query(array(
-    'posts_per_page' => 5,
+    'posts_per_page' => 3,
     'post_type' => 'Profile'
 ));?>
   <h1 class="posts-title">The Team</h1>
@@ -20,6 +20,7 @@ $homepageProfiles = new WP_Query(array(
     <ul class="profile-post-title">
     <li ><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
     </ul>
-<?php }
+<?php }?>
+<a href="<?php echo get_post_type_archive_link('profile'); ?>" class="see-more"><button>more profiles</button></a>
 
-get_footer();
+<?php get_footer();

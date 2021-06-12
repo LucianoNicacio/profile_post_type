@@ -2,6 +2,7 @@
 
 get_header();
 
+// ACF field names
 $first_name = get_field('first_name');
 $last_name = get_field('last_name');
 $nickname = get_field('nickname'); ?>
@@ -22,6 +23,9 @@ $nickname = get_field('nickname'); ?>
            <h3> Last Name: <?php echo $last_name ?> </h3>
 <?php }?>
      </div>
-
+           <div class="back-to-btn">
+             <a href="/"><button>Back Home</button></a>
+             <a href="<?php echo get_post_type_archive_link('profile'); ?>"><button>Back to Profiles</button></a>
+           </div>
 <?php
 get_footer();

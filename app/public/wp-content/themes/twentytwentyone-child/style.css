@@ -36,6 +36,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
     -o-border-radius: 5px;
 }
 
+.see-more {
+    display: flex;
+    justify-content: center;  
+}
+
 /* single-profile */
 .single-title {
     display: flex;
@@ -60,4 +65,13 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 .card h3 {
     font-weight: 400;
+}
+
+.back-to-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.back-to-btn a {
+  margin-right: 10px;
 }

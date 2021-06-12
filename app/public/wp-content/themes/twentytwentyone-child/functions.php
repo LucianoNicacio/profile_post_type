@@ -1,6 +1,6 @@
 <?php
 function my_theme_enqueue_styles() {
-
+//Enqueue Parent stylesheet
 $parent_style = 'parent-style'; 
 
 wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
@@ -12,21 +12,7 @@ wp_enqueue_style( 'child-style',
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-// function profile_post_type() {
-//     $args = array(
-//         'labels' => array(
-//            'name' => 'Profiles',
-//            'singular_name' => 'Profile',
-//         ),
-//        'public' => true,
-//        'has_archive' => true,
-//        'menu_icon' => 'dashicons-id-alt',
-//        'supports' => array('title'),
-//     );
-//     register_post_type( 'profiles', $args);
-// }
-// add_action('init', 'profile_post_type');
-
+// Profile Post Type
 function profile_post_type() {
     register_post_type( 'profile', array(
         'Rewrite' => array('slug' => 'profiles'),

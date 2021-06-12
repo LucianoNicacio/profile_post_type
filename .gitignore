@@ -41,6 +41,8 @@ app/public/wp-config-sample.php
 app/public/wp-config.php
 !app/public/wp-content/themes
 !app/public/wp-content/plugins
+wp-content/themes/twentynineteen/
+wp-content/themes/twentytwinty/
 app/public/wp-cron.php
 app/public/wp-includes
 app/public/wp-links-opml.php
